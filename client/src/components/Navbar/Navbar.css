@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+#nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: #24263b;
+	font-family: "Poppins", sans-serif;
+}
+
+.logo {
+	color: rgb(237, 238, 240);
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	
+}
+
+.logo span{
+	font-size: 40px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 900;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	width: 60%;
+	margin-bottom: 0rem;
+}
+
+.nav-links li {
+	list-style-type: none;
+}
+.nav-links a {
+	color: rgb(237, 238, 240);
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.burger {
+	display: none;
+	cursor: pointer;
+}
+
+.burger div {
+	width: 30px;
+	height: 4px;
+	background-color: rgb(237, 238, 240);
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+	.nav-links {
+		width: 70%;
+	}
+	.logo span{
+		margin-left: 40px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	/* <meta name="viewport" content="width=device-width, minimum-scale=1" />  */
+	body,
+	html {
+		overflow-x: hidden;
+	}
+	.nav-links {
+		position: absolute;
+		right: 0px;
+
+		/* for mobile  */
+		height: calc(92vh - calc(100vh - 100%));
+		top: 8vh;
+		background-color: rgba(36, 38, 59, 0.8);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+		z-index: 10000;
+	}
+	.nav-links li {
+		opacity: 0;
+	}
+	.burger {
+		display: block;
+	}
+}
+
+.nav-active {
+	transform: translateX(0%);
+}
+
+/* animation for link  */
+.ani-link-1 {
+	animation: linkAnimation 0.5s ease forwards 0.5s;
+}
+.ani-link-2 {
+	animation: linkAnimation 0.5s ease forwards 0.8s;
+}
+.ani-link-3 {
+	animation: linkAnimation 0.5s ease forwards 1.1s;
+}
+.ani-link-4 {
+	animation: linkAnimation 0.5s ease forwards 1.4s;
+}
+.ani-link-5 {
+	animation: linkAnimation 0.5s ease forwards 1.7s;
+}
+
+@keyframes linkAnimation {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+/* add cross line  */
+.line-1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.line-2 {
+	opacity: 0;
+}
+
+.line-3 {
+	transform: rotate(45deg) translate(-6px, -8px);
+}
