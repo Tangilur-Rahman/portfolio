@@ -1,0 +1,37 @@
+#projects {
+	height: 420px;
+	padding: 0 0 0 50px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+
+#projects p{
+	text-align: justify;
+}
+
+
+#projects .year {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: orangered;
+	width: 135px;
+	padding:0px;
+	border-radius: 26px;
+	color: white;
+	font-weight: 300;
+}
+
+@media screen and (max-width: 630px) {
+
+	#projects{
+		padding: 0;
+		height: 450px;
+	}
+	.projects-details h4 {
+		font-size: 15px;
+  }
+}

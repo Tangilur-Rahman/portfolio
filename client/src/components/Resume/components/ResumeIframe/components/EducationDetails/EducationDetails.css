@@ -1,0 +1,22 @@
+
+.education-heading{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.education-heading h6{
+	color: orangered;
+	font-weight: 600;
+}
+
+.education-heading span{
+	position: absolute;
+	left: 40px;
+}
+
+@media screen and  (max-width : 630px){
+	.education-heading span{
+		display: none;
+	}
+}

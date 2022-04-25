@@ -1,0 +1,25 @@
+#resume-education {
+	height: 420px;
+	padding: 45px 45px 45px 70px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#resume-education p{
+	text-align: justify;
+	margin: -17px 0 0 0;
+}
+
+@media screen and  (max-width : 630px){
+	#resume-education{
+		padding: 0;
+	}
+}
+@media screen and  (max-width : 450px){
+	div.container-fluid{
+		padding: 0px !important;
+	}
+}
+

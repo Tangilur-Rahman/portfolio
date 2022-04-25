@@ -1,0 +1,87 @@
+.carousel-items {
+	width: 375px;
+	height: 311px;
+	background-color: #f6f6f6;
+	border-radius: 50px 50px 50px 0;
+	padding: 17px;
+}
+
+@media screen and (max-width: 1450px) {
+	.carousel-items {
+		width: 300px;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.carousel-items {
+		width: 400px;
+	}
+}
+@media screen and (max-width: 1035px) {
+	.carousel-items {
+		width: 350px;
+	}
+}
+
+@media screen and (max-width: 912px) {
+	.carousel-items {
+		width: 300px;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.carousel-items {
+		width: 400px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.carousel-items {
+		width: 350px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.carousel-items {
+		width: 300px;
+	}
+}
+
+.text span {
+	color: orangered;
+	font-size: 19px;
+}
+
+.text p {
+	display: inline;
+}
+
+.rating {
+	margin: 17px 0 20px 0;
+}
+
+.rating span {
+	color: orangered;
+	font-size: 13px;
+}
+
+.carousel-items .image {
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.carousel-items .image .circle {
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	border: 2px solid black;
+	margin: 0;
+}
+
+.carousel-items .image .circle img {
+	width: inherit;
+	height: inherit;
+	border-radius: 1000px;
+}
+
+.carousel-items .image .title {
+	margin: 12px 0px 0 18px;
+}

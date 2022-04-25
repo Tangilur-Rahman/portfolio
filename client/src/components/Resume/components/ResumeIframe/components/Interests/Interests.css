@@ -1,0 +1,24 @@
+
+.interests-heading{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.interests-heading h6{
+	color: orangered;
+	font-weight: 600;
+}
+
+.interests-heading span{
+	position: absolute;
+	left: 40px;
+}
+
+@media screen and (max-width: 630px) {
+
+	.interests-heading span{
+		display: none;
+	}
+}
+

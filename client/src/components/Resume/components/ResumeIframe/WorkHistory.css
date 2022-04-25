@@ -1,0 +1,46 @@
+#work-history {
+	height: 420px;
+	padding: 45px 45px 45px 70px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#work-history p {
+	text-align: justify;
+}
+
+.work-heading {
+	display: flex;
+	justify-content: space-between;
+}
+
+.work-heading h6 {
+	color: orangered;
+	font-weight: 600;
+}
+
+.work-heading span {
+	position: absolute;
+	left: 40px;
+}
+
+.work-details h5 {
+	font-weight: 500;
+}
+
+@media screen and (max-width: 630px) {
+	#work-history {
+		padding: 0;
+	}
+	.work-heading span {
+		display: none;
+	}
+
+	#work-history .year {
+	
+		padding: 12px 0px;
+	
+  }
+}

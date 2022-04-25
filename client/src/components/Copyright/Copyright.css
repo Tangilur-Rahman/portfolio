@@ -1,0 +1,26 @@
+.copyright-container {
+	margin: 25px 0 0 0 !important;
+	display: flex;
+	justify-content: center;
+	background-color: #24263b;
+	border-radius: 8px;
+	color: #fbff12;
+}
+
+@media screen and (max-width: 991px) {
+	.copyright-container {
+		margin: 285px 0 0 0 !important;
+	}
+}
+
+.copyright-container .owner {
+	letter-spacing: 5px;
+	padding: 10px 10px 0 25px;
+	font-family: "Ms Madi", cursive;
+	font-weight: 700;
+}
+
+.copyright-container .copyright-icon {
+	font-size: 32px;
+	margin: 12px 0 0 0;
+}

@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
+
+.profile-container {
+	background-color: #24263b;
+	padding: 0 0 120px 0;
+	position: relative;
+	overflow-x: hidden;
+}
+
+#profile-2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 18vh -6vw 0 0;
+}
+
+.profile-icon-container .icon {
+	font-size: 18px;
+	margin: 0 5px;
+	color: whitesmoke;
+
+	cursor: pointer;
+}
+
+.profile-icon-container .icon:hover {
+	font-size: 22px;
+	color: orangered;
+	transition: all 1s;
+}
+
+.profile-details h2 {
+	color: whitesmoke;
+	text-align: center;
+	margin: 15px 0 0 0;
+}
+.profile-details h2 span {
+	color: #fbff12;
+	font-size: 36px;
+	font-family: "Ms Madi", cursive;
+}
+
+.profile-details span {
+	color: whitesmoke;
+	font-size: 34px;
+}
+.profile-details p {
+	color: whitesmoke;
+	font-family: "Poppins";
+	word-spacing: 1px;
+	margin: -10px -70px 0 0;
+	width: 540px;
+}
+
+.profile-btn-container {
+	display: flex;
+	justify-content: center;
+	margin: 43px 0px 0 0px;
+	height: 54px;
+}
+
+.profile-details a {
+	color: whitesmoke;
+	padding: 15px;
+	text-decoration: none;
+	margin: 0 25px;
+}
+
+.profile-details #btn-1 {
+	background-color: #24263b;
+	margin: 0 25px;
+}
+
+.profile-details #btn-1:hover {
+	border-color: orangered !important;
+	transition: all 1s;
+}
+
+.profile-details #btn-2 {
+	background-color: #24263b;
+	margin: 0 25px;
+	background-color: orangered;
+	padding: 0px;
+}
+
+.profile-details #btn-2:hover {
+	opacity: 0.9;
+	transition: opacity 1s;
+}
+
+#profile-1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 1px 0 0px whitesmoke;
+	border-radius: 50%;
+	height: 380px;
+	width: 380px;
+	margin: 14vh 0vw 0 11vh;
+}
+
+#profile-1 img {
+	height: 92%;
+	width: 92%;
+	background-size: cover;
+	border-radius: 50%;
+	background-position: center;
+}
+
+#profile-1 img:hover {
+	transform: scale(1.07);
+	transition: 1s ease-out;
+}
+
+.profile-shape {
+	width: 100vw;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+}
+
+@media screen and (max-width: 1150px) {
+	#profile-2 {
+		margin: 18vh -10vw 0 0;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.profile-1-container,
+	.profile-2-container {
+		display: flex;
+		justify-content: center;
+		margin: -2vh 0 0 0;
+	}
+
+	#profile-1 {
+		margin: 11vh 0 0 0;
+	}
+
+	#profile-2 {
+		margin: 3vh 0 0 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.profile-container {
+		height: 760px;
+	}
+
+	#profile-1 {
+		margin: 3vh 0 0 0;
+		width: 300px;
+		height: 300px;
+	}
+	.profile-details a {
+		padding: 6px;
+		margin: 0 20px;
+	}
+
+	.profile-details p {
+		margin: -10px -91px 0 0;
+		font-size: 15px;
+	}
+}
+@media screen and (max-width: 470px) {
+	.profile-details span {
+		font-size: 26px;
+	}
+	.profile-details p {
+		font-size: 13px;
+		width: 389px;
+		margin: -10px -7px 0 0;
+	}
+	.profile-details #btn-1 {
+		margin: 0px 20px;
+	}
+	.profile-details #btn-2 {
+		margin: 0px 20px;
+	}
+}

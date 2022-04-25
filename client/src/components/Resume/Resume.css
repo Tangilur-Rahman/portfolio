@@ -1,0 +1,45 @@
+.resume-container {
+	margin: 100px 0 0 0;
+	height: 550px;
+	overflow: hidden;
+}
+
+@media  screen and (max-width : 992px) {
+	.resume-container {
+		
+		height: 1050px;
+		
+	}
+	.resume-details{
+		margin : 50px 0 0 0;
+	}
+
+}
+
+.resume-section-2 {
+	display: flex;
+	justify-content: center;
+	margin: 40px 0 0 0;
+
+
+	
+}
+
+
+.resume-nav {
+	padding: 0;
+	box-shadow: 6px 0 5px -2px #888;
+}
+
+.year {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: orangered;
+	width: 135px;
+	padding: 15px 0px;
+	border-radius: 26px;
+	color: white;
+	font-weight: 300;
+}
+

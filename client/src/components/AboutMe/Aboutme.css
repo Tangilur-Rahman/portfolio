@@ -1,0 +1,147 @@
+.aboutme-container {
+	margin: 100px 0 0 0;
+}
+.aboutme-heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.aboutme-heading h2 {
+	font-weight: bold;
+}
+.aboutme-heading p {
+	letter-spacing: 2px;
+	font-size: 14px;
+}
+
+.aboutme-heading span {
+	width: 30px;
+	height: 8px;
+	background-color: orangered;
+	position: relative;
+	z-index: 1;
+}
+
+.aboutme-heading hr {
+	width: 161px;
+	color: black;
+	height: 3px;
+	opacity: 1;
+	margin: -5px 0 0 0;
+}
+
+.aboutme-section-2 {
+	display: flex;
+	justify-content: center;
+	padding: 0px;
+	margin: 40px 0 0 0;
+	height: 500px;
+}
+
+.aboutme-pic {
+	height: 500px;
+	background-image: url("./../assets/china.png");
+	background-position: center 66%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media screen and (max-width: 850px) {
+	.aboutme-pic {
+		display: none;
+	}
+	.aboutme-details {
+		width: 100%;
+	}
+}
+
+.aboutme-details {
+	padding: 40px;
+}
+
+.aboutme-details p {
+	text-align: justify;
+}
+.aboutme-details h4 {
+	margin: 6vh 0 0 0;
+}
+.aboutme-details ul {
+	margin: 3vh 1px 0 -18px;
+}
+
+.aboutme-details ul li {
+	list-style-type: none;
+}
+
+.aboutme-details li::before {
+	content: "🟠";
+	font-size: 15px;
+	margin: 0px 12px 0 0;
+}
+
+.aboutme-btn-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 43px 0px 0 0px;
+	height: 54px;
+}
+
+.aboutme-btn-container a {
+	color: whitesmoke;
+	padding: 15px;
+	text-decoration: none;
+	margin: 0 7px;
+}
+
+.aboutme-btn-container #btn-1 {
+	background-color: #24263b;
+	margin: 0 10px;
+}
+
+.aboutme-btn-container #btn-1:hover {
+	border-color: orangered !important;
+	transition: all 1s;
+}
+
+.aboutme-btn-container #btn-2 {
+	background-color: #24263b;
+	margin: 0 10px;
+	background-color: orangered;
+	padding: 0px;
+}
+
+.aboutme-btn-container #btn-2:hover {
+	opacity: 0.9;
+	transition: opacity 1s;
+}
+
+@media screen and (max-width: 565px) {
+	.aboutme-btn-container a {
+		padding: 0px;
+		margin: 0 20px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.aboutme-details h4 {
+		margin: 6vh 0 0 -6px;
+	}
+
+	.aboutme-details ul {
+		margin: 3vh 1px 0 -33px;
+	}
+
+	.aboutme-details {
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.aboutme-btn-container #btn-1 {
+		margin: 0;
+	}
+	.aboutme-btn-container #btn-2 {
+		margin: 0;
+	}
+}
