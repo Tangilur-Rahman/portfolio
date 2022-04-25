@@ -43,7 +43,7 @@ const ContractMe = () => {
 			const response = await fetch("/user", {
 				method: "POST",
 				body: JSON.stringify(userObject),
-				headers: { "Content-Type": "application/json"}
+				headers: { "Content-Type": "application/json" }
 			});
 
 			console.log(response);
@@ -56,6 +56,8 @@ const ContractMe = () => {
 					autoClose: 5000,
 					theme: "dark"
 				});
+
+				setUser({ name: "", email: "", message: "" });
 			} else {
 				toast(result.error, {
 					position: "top-right",
@@ -64,7 +66,6 @@ const ContractMe = () => {
 				});
 			}
 		} catch (error) {
-		
 			toast("Sry,Try Again Later 🙏", {
 				position: "top-right",
 				autoClose: 5000,
@@ -128,6 +129,7 @@ const ContractMe = () => {
 															type="text"
 															id="name"
 															name="name"
+															value={name}
 															required
 															autoComplete="off"
 															onChange={handleChange}
@@ -142,6 +144,7 @@ const ContractMe = () => {
 															type="email"
 															id="email"
 															name="email"
+															value={email}
 															required
 															autoComplete="off"
 															onChange={handleChange}
@@ -155,6 +158,7 @@ const ContractMe = () => {
 														<textarea
 															id="message-textarea"
 															name="message"
+															value={message}
 															placeholder="Message..."
 															onChange={handleChange}
 														></textarea>

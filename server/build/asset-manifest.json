@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b08c1a63.css",
-    "main.js": "/static/js/main.18360967.js",
+    "main.js": "/static/js/main.cc2311a8.js",
     "static/media/Tangil.jpg": "/static/media/Tangil.b6897bef9c1bdf1c55c4.jpg",
     "static/media/avatar-1.png": "/static/media/avatar-1.6ad9800da25dbb871fb1.png",
     "static/media/china.png": "/static/media/china.4b35c046351f5f4ad197.png",
@@ -15,10 +15,10 @@
     "static/media/avatar-5.png": "/static/media/avatar-5.0f7608f3c74d08262c2c.png",
     "index.html": "/index.html",
     "main.b08c1a63.css.map": "/static/css/main.b08c1a63.css.map",
-    "main.18360967.js.map": "/static/js/main.18360967.js.map"
+    "main.cc2311a8.js.map": "/static/js/main.cc2311a8.js.map"
   },
   "entrypoints": [
     "static/css/main.b08c1a63.css",
-    "static/js/main.18360967.js"
+    "static/js/main.cc2311a8.js"
   ]
 }
