@@ -15,7 +15,12 @@ import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 const ContractMe = () => {
+	
+	const form = useRef();
 	const [user, setUser] = useState({
 		name: "",
 		email: "",
@@ -37,8 +42,6 @@ const ContractMe = () => {
 			message
 		};
 
-		console.log(userObject);
-
 		try {
 			const response = await fetch("/user", {
 				method: "POST",
@@ -46,16 +49,21 @@ const ContractMe = () => {
 				headers: { "Content-Type": "application/json" }
 			});
 
-			console.log(response);
 			const result = await response.json();
 
-			console.log(result);
 			if (response.status === 200) {
 				toast(result.message, {
 					position: "top-right",
 					autoClose: 5000,
 					theme: "dark"
 				});
+
+				await emailjs.sendForm(
+					"service_e4iawkh",
+					"template_q7fq2cw",
+					form.current,
+					"A44qtkXfKHhh85d4C"
+				);
 
 				setUser({ name: "", email: "", message: "" });
 			} else {
@@ -66,7 +74,7 @@ const ContractMe = () => {
 				});
 			}
 		} catch (error) {
-			toast("Sry,Try Again Later 🙏", {
+			toast("Sry, Try Again Later 🙏", {
 				position: "top-right",
 				autoClose: 5000,
 				theme: "dark"
@@ -119,6 +127,7 @@ const ContractMe = () => {
 									<form
 										method="POST"
 										encType="application/x-www-form-urlencoded"
+										ref={form}
 									>
 										<div className="card">
 											<div className="row">
