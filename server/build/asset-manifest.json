@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3441c6c6.css",
-    "main.js": "/static/js/main.c41653f4.js",
+    "main.css": "/static/css/main.5a704930.css",
+    "main.js": "/static/js/main.5cd34c16.js",
     "static/media/Tangil.jpg": "/static/media/Tangil.b6897bef9c1bdf1c55c4.jpg",
     "static/media/avatar-1.png": "/static/media/avatar-1.6ad9800da25dbb871fb1.png",
     "static/media/china.png": "/static/media/china.4b35c046351f5f4ad197.png",
@@ -14,11 +14,11 @@
     "static/media/avatar-4.png": "/static/media/avatar-4.6f678b05521261910525.png",
     "static/media/avatar-5.png": "/static/media/avatar-5.0f7608f3c74d08262c2c.png",
     "index.html": "/index.html",
-    "main.3441c6c6.css.map": "/static/css/main.3441c6c6.css.map",
-    "main.c41653f4.js.map": "/static/js/main.c41653f4.js.map"
+    "main.5a704930.css.map": "/static/css/main.5a704930.css.map",
+    "main.5cd34c16.js.map": "/static/js/main.5cd34c16.js.map"
   },
   "entrypoints": [
-    "static/css/main.3441c6c6.css",
-    "static/js/main.c41653f4.js"
+    "static/css/main.5a704930.css",
+    "static/js/main.5cd34c16.js"
   ]
 }

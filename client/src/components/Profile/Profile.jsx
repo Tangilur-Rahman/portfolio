@@ -4,6 +4,7 @@ import myPic from "./../assets/Tangil.jpg";
 import myResume from "./../assets/Tangilur_Rahman.pdf";
 import TypingAnimation from "./TypingAnimation/TypingAnimation";
 import "./Profile.css";
+import { Link } from "react-scroll";
 
 const Profile = () => {
 	return (
@@ -38,11 +39,20 @@ const Profile = () => {
 
 									<div className="profile-btn-container">
 										<button className="btn border rounded-pill" id="btn-1">
-											<a href="#contractme">Hire Me</a>
+										<Link
+												to="contractme"
+												spy={true}
+												smooth={true}
+												offset={0}
+												duration={500}
+												className="profile-btn"
+											>
+												Hire Me
+											</Link>
 										</button>
 
 										<button className="btn border rounded-pill" id="btn-2">
-											<a href={myResume} download="Tangilur_Rahman">
+											<a href={myResume} download="Tangilur_Rahman" className="profile-btn">
 												Get Resume
 											</a>
 										</button>
